@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe5cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+ .chatbox {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 60px auto;
+    row-gap: 20px;
+    padding: 20px;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recibido {
+    display: grid;
+    grid-template-columns: 60px auto;
+    column-gap: 10px;
+    grid-column: 1 / 3;
+    align-items: start;
+}
+
+.enviado {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column: 2 / 4;
+    justify-self: end;
+    max-width: 300px;
+}
+
+.pfp {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.mensaje {
+    background-color: #e6f7ff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    max-width: 300px;
+}
+
+.enviado .mensaje {
+    background-color: #d1f7c4;
+}
+
+.mensaje p {
+    margin: 0;
+}
+
+.hora {
+    font-size: 0.75em;
+    color: #888;
+}
