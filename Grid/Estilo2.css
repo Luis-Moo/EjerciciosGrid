@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #f0f8ff;
+    padding: 30px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 3px solid grey;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.step-indicator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+}
+
+.step.active {
+    color: green;
+    font-weight: bold;
+}
+
+.meal-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.meal-option {
+    grid-column: 1 / 2;
+}
+
+.drink-option {
+    grid-column: 2 / 3;
+}
+
+.meal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.meal-form select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.dessert {
+    grid-column: span 2;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #ccc;
+}
